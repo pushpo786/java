@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Functional" verbose="1" >
+    <test name="FlightSearchPage" >
+        <!--        <groups>-->
+        <!--            <run>-->
+        <!--                <include name="Regression"/>-->
+        <!--            </run>-->
+        <!--        </groups>-->
+        <classes>
+            <class name="testPOM.TestFlightSearchPage"/>
+        </classes>
+    </test>
+
+    <parameter name="url" value="https://www.expedia.com"/>
+    <parameter name="browser" value="chrome"/>
+</suite>
